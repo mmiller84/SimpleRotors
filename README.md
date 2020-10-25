@@ -1,47 +1,44 @@
-# SimpleWings
+# SimpleRotors
 
-A simple, configurable aerodynamic wing that applies lift and drag forces based on pre-defined curves. Includes a flyable example airplane, along with a bomb and rocket.
+_Based on SimpleWings: https://github.com/brihernandez/simplewings_
 
-Built in **Unity 5.6.7f1.**
+A simple, configurable aerodynamic rotor blade that applies lift and drag forces based on pre-defined curves. Includes a flyable example helicopter complete with a simulated swashplate for cyclic and collective control.
 
-![screenshot](Screenshots/wings.png)
+The following real-world helicopter concepts are fully simulated:
+- Relative wind
+- Gyroscopic precession
+- Torque/Anti-torque
+- Dissymmetry of lift
+- Retreating blade stall
+
+Built in **Unity 20.2.0a21**
+
+![screenshot](Screenshots/rotors.png)
 
 ## Download
 
-You can either clone the repository or [download the asset package](./SimpleWings.unitypackage) located in the root.
+You can either clone the repository or [download the asset package](./SimpleRotors.unitypackage) located in the root.
 
 If you'd like to try the standalone demo, [it can be downloaded from the releases page](https://github.com/brihernandez/SimpleWings/releases).
 
-***Note:** When importing the demo content from the package, a "Yaw" axis will need to be set up in the Input Manager in order to get the rudder to work on the sample plane. This is because asset packages cannot modify the Input Manager, and the plane requires a third axis not available on the default setup.*
+***Note:** When importing the demo content from the package, "Yaw" and "Collective" axes will need to be set up in the Input Manager in order to get the tail rotor and collective pitch to work on the sample helicopter. This is because asset packages cannot modify the Input Manager, and the helicopter requires a third and fourth axis not available on the default setup.*
 
 ## Demo Controls
 
-![screenshot](Screenshots/flying.gif)
-
-The demo plane is best flown with an Xbox One controller. Keyboard controls will work, but because of the on/off input that comes from keys, it's not the best experience.
+The demo helicopter is best flown with an Xbox One controller.
 
 ### Gamepad
 
-- Left stick: Pitch and Roll
-- Triggers: Yaw
-- A: Speed up
-- B: Slow down
-- X: Fire weapons
+- Left stick: Cyclic (pitch and roll)
+- Right stick: Collective
+- Triggers: Tail Rotor (Yaw)
+- Spacebar: Engine on/off
 
-### Keyboard
 
-- W/S/Up/Down: Pitch
-- A/D/Left/Right: Roll
-- Q/E: Yaw
-- L Shift: Fire weapons
-- R: Speed up
-- Spacebar: Slow down
 
-# Wings
+# Rotor Blades
 
-These wings are driven through a very abstract approximation of aerodynamics. Lift and drag coefficients are simulated through pre-defined curves created on a WingCurve ScriptableObject. As the angle of attack changes, so does the lift and drag forces incurred. Lift is always perpendicular to the air flow, while drag is always in the opposite direction of the velocity.
-
-By putting together wings onto an object in a reasonable way, it's easy to create a physics based flyable airplane. To turn the plane (without cheating with Rigidbody.AddTorque), you will need to deflect wings to create a torque on the plane. Included is a very basic control surface component to facilitate this. See the example Airplane prefab for how to set this up.
+The rotor blades are driven through a very abstract approximation of aerodynamics. Lift and drag coefficients are simulated through pre-defined curves created on a WingCurve ScriptableObject. As the angle of attack changes, so does the lift and drag forces incurred. Lift is always perpendicular to the air flow, while drag is always in the opposite direction of the velocity.
 
 ## SimpleWing Component
 
@@ -79,31 +76,8 @@ When creating wings, the most important points are the first and last three. The
 
 To aid in creating wings, a lift curve generator is available. With it, you can specify the basic parameters of the curve such as where the critical angle of attack is, and how much lift the wing generates at this point. Tooltips are available on each option.
 
-## Control Surface
-
-To actually fly the plane, you'll need to deflect your wings. The ControlSurface class is included as a simple example, but really shouldn't be taken as gospel. It's a bit hacky.
-
-It's very simple to operate. All you need to do is set a normalized deflection (-1 to 1) through script by setting the `targetDeflection` variable. From there, the control surface will move to the specified deflection at their given speed. Control surfaces only deflect in the "pitch" axis, so make sure you orient these as needed.
-
-For certain control surfaces you can put the wings on the same game object, but often times you want the axis of rotation to be different from where the wing is physically located. In those cases, the wing is best on a child game object. See the Airplane prefab for examples on how to set these up with wings.
-
-Control surfaces can optionally have their deflection limited based on the force required to deflect the wing. Put another way, the faster the plane is flying, the less it will be able to deflect the wing. This makes for much more stable and controllable aircraft at high speed, and has a basis in reality.
-
 # Changelog
 
-### 1.1 (Feb 1, 2020)
-
-- Updated to Unity v5.6.7f1
-- Renamed `GetLiftAtAaoa` to `GetLiftAtAOA` to fix typo
-- Renamed `GetDragAtAaoa` to `GetDragAtAOA` to fix typo
-- Debug ray for lift direction shows correct direction
-- Added `#if UNITY_EDITOR` check to prevent Editor-only code from causing issues in a built game
-- Control surfaces can have asymmetric deflection limits (e.g. max 30, min 10)
-- Control surface deflecton can be limited with speed by using `maxTorque`
-- Made `TargetDeflection` property a simple public variable `targetDeflection`
-- FighterJet prefab has increased thrust
-- FighterJet prefab control surfaces demonstrate the new `maxTorque` on ControlSurfaces
-
-### 1.0 (Nov 4 2017)
-
-- Released
+### 1.0 (October 25, 2020)
+- Initial release
+- Forked from SimpleWings (https://github.com/brihernandez/simplewings)

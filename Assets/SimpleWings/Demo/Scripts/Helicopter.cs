@@ -6,83 +6,57 @@
 using UnityEngine;
 using System;
 
-public class Airplane : AircraftBase
+public class Helicopter : AircraftBase
 {
-	public ControlSurface elevator;
-	public ControlSurface aileronLeft;
-	public ControlSurface aileronRight;
-	public ControlSurface rudder;
-	public Engine engine;
+    public bool EngineOn = false;
 
 	public WeaponDropper[] weapons;
 
 	public override Rigidbody Rigidbody { get; internal set; }
 
-	private float throttle = 1.0f;
-	private bool yawDefined = false;
+    private Rigidbody _hub;
+    private HingeJoint _hinge;
+
+    public int Rpm
+    {
+        get
+        {
+            var angVel = _hub.transform.InverseTransformVector(_hub.angularVelocity);
+            return Mathf.Abs(Mathf.FloorToInt(angVel.y * 9.5493f));
+        }
+    }
+
+    private float _collective = 0f;
+    public float Collective => _collective;
 
 	private void Awake()
 	{
 		Rigidbody = GetComponent<Rigidbody>();
-	}
+        _hinge = GetComponent<HingeJoint>();
+        _hub = _hinge.connectedBody;
+    }
 
 	private void Start()
 	{
-		if (elevator == null)
-			Debug.LogWarning(name + ": Airplane missing elevator!");
-		if (aileronLeft == null)
-			Debug.LogWarning(name + ": Airplane missing left aileron!");
-		if (aileronRight == null)
-			Debug.LogWarning(name + ": Airplane missing right aileron!");
-		if (rudder == null)
-			Debug.LogWarning(name + ": Airplane missing rudder!");
-		if (engine == null)
-			Debug.LogWarning(name + ": Airplane missing engine!");
-
 		try
 		{
 			Input.GetAxis("Yaw");
-			yawDefined = true;
 		}
 		catch (ArgumentException e)
 		{
 			Debug.LogWarning(e);
-			Debug.LogWarning(name + ": \"Yaw\" axis not defined in Input Manager. Rudder will not work correctly!");
+			Debug.LogWarning(name + ": \"Yaw\" axis not defined in Input Manager. Tail rotor will not work correctly!");
 		}
-	}
+    }
 
-	// Update is called once per frame
 	void Update()
 	{
-		if (elevator != null)
-		{
-			elevator.targetDeflection = -Input.GetAxis("Vertical");
-		}
-		if (aileronLeft != null)
-		{
-			aileronLeft.targetDeflection = -Input.GetAxis("Horizontal");
-		}
-		if (aileronRight != null)
-		{
-			aileronRight.targetDeflection = Input.GetAxis("Horizontal");
-		}
-		if (rudder != null && yawDefined)
-		{
-			// YOU MUST DEFINE A YAW AXIS FOR THIS TO WORK CORRECTLY.
-			// Imported packages do not carry over changes to the Input Manager, so
-			// to restore yaw functionality, you will need to add a "Yaw" axis.
-			rudder.targetDeflection = Input.GetAxis("Yaw");
-		}
+        if(Input.GetButtonDown("Jump"))
+        {
+            EngineOn = !EngineOn;
+        }
 
-		if (engine != null)
-		{
-			// Fire 1 to speed up, Fire 2 to slow down. Make sure throttle only goes 0-1.
-			throttle += Input.GetAxis("Fire1") * Time.deltaTime;
-			throttle -= Input.GetAxis("Fire2") * Time.deltaTime;
-			throttle = Mathf.Clamp01(throttle);
-
-			engine.throttle = throttle;
-		}
+		_collective = (Input.GetAxis("Collective") + 1f) / 2f;
 
 		if (weapons.Length > 0)
 		{
@@ -94,9 +68,11 @@ public class Airplane : AircraftBase
 				}
 			}
 		}
-	}
 
-	private float CalculatePitchG()
+        _hinge.useMotor = EngineOn;
+    }
+
+    private float CalculatePitchG()
 	{
 		// Angular velocity is in radians per second.
 		Vector3 localVelocity = transform.InverseTransformDirection(Rigidbody.velocity);
@@ -122,11 +98,12 @@ public class Airplane : AircraftBase
 		return verticalG;
 	}
 
-	private void OnGUI()
+    private void OnGUI()
 	{
 		const float msToKnots = 1.94384f;
 		GUI.Label(new Rect(10, 40, 300, 20), string.Format("Speed: {0:0.0} knots", Rigidbody.velocity.magnitude * msToKnots));
-		GUI.Label(new Rect(10, 60, 300, 20), string.Format("Throttle: {0:0.0}%", throttle * 100.0f));
+		GUI.Label(new Rect(10, 60, 300, 20), string.Format("Collective: {0:0.0}%", _collective * 100.0f));
 		GUI.Label(new Rect(10, 80, 300, 20), string.Format("G Load: {0:0.0} G", CalculatePitchG()));
-	}
+        GUI.Label(new Rect(10, 100, 300, 20), string.Format("Rotor RPM: {0}", Rpm));
+    }
 }

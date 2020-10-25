@@ -92,8 +92,9 @@ public class SimpleWing : MonoBehaviour
 		// DEBUG
 		if (rigid != null)
 		{
-			Debug.DrawRay(transform.position, liftDirection * liftForce * 0.0001f, Color.blue);
-			Debug.DrawRay(transform.position, -rigid.velocity.normalized * dragForce * 0.0001f, Color.red);
+            var velocity = rigid.GetPointVelocity(transform.position);
+            Debug.DrawRay(transform.position, liftDirection * liftForce * 0.001f, Color.blue);
+			Debug.DrawRay(transform.position, -velocity.normalized * dragForce * 0.001f, Color.red);
 		}
 	}
 
@@ -103,7 +104,8 @@ public class SimpleWing : MonoBehaviour
 		{
 			Vector3 forceApplyPos = (applyForcesToCenter) ? rigid.transform.TransformPoint(rigid.centerOfMass) : transform.position;
 
-			Vector3 localVelocity = transform.InverseTransformDirection(rigid.GetPointVelocity(transform.position));
+            var velocity = rigid.GetPointVelocity(transform.position);
+            Vector3 localVelocity = transform.InverseTransformDirection(velocity);
 			localVelocity.x = 0f;
 
 			// Angle of attack is used as the look up for the lift and drag curves.
@@ -119,11 +121,11 @@ public class SimpleWing : MonoBehaviour
 			liftForce *= -Mathf.Sign(localVelocity.y);
 
 			// Lift is always perpendicular to air flow.
-			liftDirection = Vector3.Cross(rigid.velocity, transform.right).normalized;
+			liftDirection = Vector3.Cross(velocity.normalized, transform.right).normalized;
 			rigid.AddForceAtPosition(liftDirection * liftForce, forceApplyPos, ForceMode.Force);
 
 			// Drag is always opposite of the velocity.
-			rigid.AddForceAtPosition(-rigid.velocity.normalized * dragForce, forceApplyPos, ForceMode.Force);
+			rigid.AddForceAtPosition(-velocity.normalized * dragForce, forceApplyPos, ForceMode.Force);
 		}
 	}
 

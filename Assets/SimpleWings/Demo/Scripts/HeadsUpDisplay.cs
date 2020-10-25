@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class HeadsUpDisplay : MonoBehaviour
 {
-	public Airplane plane;
+	public AircraftBase plane;
 
 	public Image fpm;
 	public Image cross;
