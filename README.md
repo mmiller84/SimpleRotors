@@ -19,7 +19,7 @@ Built in **Unity 20.2.0a21**
 
 You can either clone the repository or [download the asset package](./SimpleRotors.unitypackage) located in the root.
 
-If you'd like to try the standalone demo, [it can be downloaded from the releases page](https://github.com/brihernandez/SimpleWings/releases).
+If you'd like to try the standalone demo, [it can be downloaded from the releases page](https://github.com/mmiller84/SimpleRotors/releases).
 
 ***Note:** When importing the demo content from the package, "Yaw" and "Collective" axes will need to be set up in the Input Manager in order to get the tail rotor and collective pitch to work on the sample helicopter. This is because asset packages cannot modify the Input Manager, and the helicopter requires a third and fourth axis not available on the default setup.*
 
