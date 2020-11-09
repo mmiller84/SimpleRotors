@@ -15,11 +15,11 @@ E:/Projects/SimpleRotors
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58025
+49347
 Successfully changed project path to: E:/Projects/SimpleRotors
 E:/Projects/SimpleRotors
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 31.09 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 33.12 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.0a21 (3e0d5f775006)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.0a21/Editor/Data/Resources/UnitySubsystems
@@ -31,40 +31,40 @@ Direct3D:
     Vendor:   
     VRAM:     6052 MB
     Driver:   27.21.14.5671
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.0a21/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.0a21/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.0a21/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56152
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56568
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.0a21/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.0a21/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.002492 seconds.
+Registered in 0.002421 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 24.48 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 32.34 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.096 seconds
+- Completed reload, in  1.110 seconds
 Registering precompiled user dll's ...
-Registered in 0.071523 seconds.
+Registered in 0.084318 seconds.
 Platform modules already initialized, skipping
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image E:\Projects\SimpleRotors\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.30 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.31 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.755 seconds
+- Completed reload, in  0.804 seconds
 Platform modules already initialized, skipping
 Script is not up to date after domain reload: guid(01df650e1b86e9f4a8e2b5dc9782506f) path("Packages/com.unity.ugui/Tests/Runtime/NestedLayout/SceneWithNestedLayoutElementsLoads.cs") state(2)
 Script is not up to date after domain reload: guid(5503f95d174761548a68a901beab13c2) path("Packages/com.unity.timeline/Editor/Window/Modes/TimelineInactiveMode.cs") state(2)
@@ -381,8 +381,8 @@ Script is not up to date after domain reload: guid(2bd83f31da5b4435ac97cde1432e7
 Script is not up to date after domain reload: guid(93eb6389f4fb6924987867ce0bc339ee) path("Packages/com.unity.test-framework/UnityEditor.TestRunner/TestRun/Tasks/CleanupVerificationTask.cs") state(2)
 Script is not up to date after domain reload: guid(5b6cac4a98010394791c66942a33caf4) path("Packages/com.unity.timeline/Editor/Audio/AudioClipPropertiesDrawer.cs") state(2)
 Script is not up to date after domain reload: guid(4f10dd60657c6004587f237a7e90f8e4) path("Packages/com.unity.timeline/Runtime/Audio/AudioPlayableAsset.cs") state(2)
-Script is not up to date after domain reload: guid(10ee98884a6e2ce49b1c338b54da3518) path("Assets/SimpleWings/Scripts/Helicopter2.cs") state(2)
 Script is not up to date after domain reload: guid(dd85a35169d313840a0874aea1a28629) path("Packages/com.unity.test-framework/UnityEngine.TestRunner/NUnitExtensions/Commands/EnumerableSetUpTearDownCommand.cs") state(2)
+Script is not up to date after domain reload: guid(ef97f39912c138b4cabdccedfb24093b) path("Packages/com.unity.timeline/Editor/treeview/Drawers/Layers/ItemsLayer.cs") state(2)
 Script is not up to date after domain reload: guid(d36c7f4b1ab29415394bf531fb4b54c8) path("Packages/com.unity.recorder/Editor/Sources/CameraCapture.cs") state(2)
 Script is not up to date after domain reload: guid(c3c112f1ddeedfe45839158cc4b148d4) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Utils/ColorUtilities.cs") state(2)
 Script is not up to date after domain reload: guid(c4777500b5da6094e956c3d4f04de4db) path("Packages/com.unity.textmeshpro/Scripts/Editor/TMP_GlyphPropertyDrawer.cs") state(2)
@@ -399,7 +399,6 @@ Script is not up to date after domain reload: guid(423fe2ef878fa1140a7e1f7f9e365
 Script is not up to date after domain reload: guid(67ee43b2f6148de40861b289b0e00591) path("Packages/com.unity.timeline/Editor/Window/Modes/TimelineActiveMode.cs") state(2)
 Script is not up to date after domain reload: guid(f16e09785c984c445a0467e30f845636) path("Packages/com.unity.timeline/Editor/Manipulators/Cursors/TimelineCursors.cs") state(2)
 Script is not up to date after domain reload: guid(f8964ef46e1d446dc9eb17a36a3e1f14) path("Packages/com.unity.timeline/Editor/treeview/TrackPropertyCurvesDataSource.cs") state(2)
-Script is not up to date after domain reload: guid(ef97f39912c138b4cabdccedfb24093b) path("Packages/com.unity.timeline/Editor/treeview/Drawers/Layers/ItemsLayer.cs") state(2)
 Script is not up to date after domain reload: guid(cc6401f13df54ba44bfd7cdc93c7d64d) path("Packages/com.unity.test-framework/UnityEngine.TestRunner/NUnitExtensions/Attributes/UnitySetUpAttribute.cs") state(2)
 Script is not up to date after domain reload: guid(8349e42a2b30c7a4abd8678c203428ba) path("Packages/com.unity.test-framework/UnityEngine.TestRunner/NUnitExtensions/Commands/ImmediateEnumerableCommand.cs") state(2)
 Script is not up to date after domain reload: guid(5b3e90046c38f1d4dad2e0d5a79e871c) path("Packages/com.unity.test-framework/UnityEngine.TestRunner/NUnitExtensions/Runner/UnityWorkItemDataHolder.cs") state(2)
@@ -614,7 +613,7 @@ Script is not up to date after domain reload: guid(f58ce17b38de9c7488c65caeeefd0
 Script is not up to date after domain reload: guid(93665e8b67658804d99c4487228cc050) path("Packages/com.unity.timeline/Runtime/TimelineAsset_CreateRemove.cs") state(2)
 Script is not up to date after domain reload: guid(31a19414c41e5ae4aae2af33fee712f6) path("Packages/com.unity.ugui/Runtime/UI/Core/Mask.cs") state(2)
 Script is not up to date after domain reload: guid(e435bf89a8bb0bf4abee94a2cc516927) path("Packages/com.unity.recorder/Editor/Sources/Recorders/GIFRecorder/GIFRecorderSettings.cs") state(2)
-Script is not up to date after domain reload: guid(2587848887032bd459b287b10ae5912e) path("Assets/SimpleWings/Scripts/TailRotor.cs") state(2)
+Script is not up to date after domain reload: guid(2587848887032bd459b287b10ae5912e) path("Assets/SimpleWings/Demo/Scripts/TailRotor.cs") state(2)
 Script is not up to date after domain reload: guid(8a4b6301a5afaec4cb87d21383ceb0b3) path("Packages/com.unity.ugui/Tests/Runtime/Layout/VerticalLayoutGroupTests.cs") state(2)
 Script is not up to date after domain reload: guid(76c82729ad712f14bae1a8a279c52ac3) path("Packages/com.unity.ugui/Tests/Runtime/EventSystem/InputModuleTests/DragCallbackCheck.cs") state(2)
 Script is not up to date after domain reload: guid(1344c3c82d62a2a41a3576d8abb8e3ea) path("Packages/com.unity.ugui/Runtime/UI/Core/RawImage.cs") state(2)
@@ -968,7 +967,6 @@ Script is not up to date after domain reload: guid(cad095eccea17b741bc4cd264e744
 Script is not up to date after domain reload: guid(3051d2fb25301fa4a81e797109712feb) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Effects/AutoExposureEditor.cs") state(2)
 Script is not up to date after domain reload: guid(6d5f9c23c4be9e644ae25c47f8b2299d) path("Packages/com.unity.collab-proxy/Editor/Views/Adapters/ListAdapters/BaseListAdapter.cs") state(2)
 Script is not up to date after domain reload: guid(8d20eedbe40f0ce41a4c4f633f225de8) path("Packages/com.unity.test-framework/UnityEditor.TestRunner/CommandLineTest/LogSavingCallbacks.cs") state(2)
-Script is not up to date after domain reload: guid(4e91bb4794de1b244bc8159f60f97165) path("Assets/SimpleWings/Scripts/RotorBlade.cs") state(2)
 Script is not up to date after domain reload: guid(3c4ccfb0896bcf44da13e152b267aa49) path("Packages/com.unity.test-framework/UnityEditor.TestRunner/TestLaunchers/PrebuildSetupAttributeFinder.cs") state(2)
 Script is not up to date after domain reload: guid(6d2f47eae5f447748892c46848956d5f) path("Packages/com.unity.test-framework/UnityEditor.TestRunner/NUnitExtension/Attributes/ITestPlayerBuildModifier.cs") state(2)
 Script is not up to date after domain reload: guid(b5b9496d9b39e674abf5b3bd1ad57a67) path("Packages/com.unity.recorder/Editor/Sources/Recorders/_Legacy/MP4/MP4Recorder.cs") state(2)
@@ -1075,7 +1073,6 @@ Script is not up to date after domain reload: guid(02e1fe0a338b35545a5fed1345848
 Script is not up to date after domain reload: guid(4545bb65ccebf8040ac212d5792979b5) path("Packages/com.unity.timeline/Editor/Utilities/Graphics.cs") state(2)
 Script is not up to date after domain reload: guid(c9b23632c77de204abfe8bf7168d48c0) path("Packages/com.unity.test-framework/UnityEditor.TestRunner/TestRunner/Utils/EditorCompilationInterfaceProxy.cs") state(2)
 Script is not up to date after domain reload: guid(56c8c6e437b14f8e9a91e9832c11bc1a) path("Packages/com.unity.ide.rider/Rider/Editor/ProjectGeneration/AssemblyNameProvider.cs") state(2)
-Script is not up to date after domain reload: guid(6b0e30c2fc413ca4ea80f7ea5830c321) path("Assets/SimpleWings/Scripts/PID.cs") state(2)
 Script is not up to date after domain reload: guid(275143c81d816ef4286fdc67aabc20c8) path("Packages/com.unity.ide.visualstudio/Editor/Messaging/MessageEventArgs.cs") state(2)
 Script is not up to date after domain reload: guid(4884ccc3528cb2e40a0e6f0a19a2b35b) path("Packages/com.unity.test-framework/UnityEditor.TestRunner/Api/CallbacksHolder.cs") state(2)
 Script is not up to date after domain reload: guid(fedb0f9e5006b1943abae52f52f08a1a) path("Packages/com.unity.test-framework/UnityEngine.TestRunner/NUnitExtensions/Attributes/UnityTestAttribute.cs") state(2)
@@ -1119,12 +1116,11 @@ Script is not up to date after domain reload: guid(d580900d83be2664c9c035d6e5079
 Script is not up to date after domain reload: guid(cb319974ad8ebd44aa1e1fbb02640b5b) path("Packages/com.unity.ugui/Editor/UI/HorizontalOrVerticalLayoutGroupEditor.cs") state(2)
 Script is not up to date after domain reload: guid(d7b5b883d3aae8d479647d5ae6182974) path("Packages/com.unity.timeline/Editor/DirectorStyles.cs") state(2)
 Script is not up to date after domain reload: guid(88338eb35defad644a48718188e8f219) path("Packages/com.unity.timeline/Editor/Manipulators/AddDelete/AddDeleteItemModeRipple.cs") state(2)
-Script is not up to date after domain reload: guid(a7c994af8695d8541b231d510f340b33) path("Assets/SimpleWings/Scripts/test.cs") state(2)
+Script is not up to date after domain reload: guid(8826b9218e4e2334086aea977a528177) path("Assets/SimpleWings/Demo/Scripts/Weapon.cs") state(2)
 Script is not up to date after domain reload: guid(22899211c24eeb248b22704499dd108f) path("Packages/com.unity.timeline/Editor/Trackhead.cs") state(2)
 Script is not up to date after domain reload: guid(061b0c1d04c01f54fa322b11b8662964) path("Packages/com.unity.recorder/Editor/Sources/RecordingSession.cs") state(2)
 Script is not up to date after domain reload: guid(f3b0ecb61e2f1e54ebd4572178bfd8b1) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Effects/SubpixelMorphologicalAntialiasing.cs") state(2)
 Script is not up to date after domain reload: guid(7a34fa72bd4185749832024e9c8010bf) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Effects/ScreenSpaceReflections.cs") state(2)
-Script is not up to date after domain reload: guid(8826b9218e4e2334086aea977a528177) path("Assets/SimpleWings/Demo/Scripts/Weapon.cs") state(2)
 Script is not up to date after domain reload: guid(227613ec5b3943443a284e30a6d6b91e) path("Packages/com.unity.timeline/Editor/inspectors/TimelinePreferences.cs") state(2)
 Script is not up to date after domain reload: guid(38f16807aeb0a5349920644eef3e04f1) path("Packages/com.unity.collab-proxy/Tests/Editor/ScenarioTestBase.cs") state(2)
 Script is not up to date after domain reload: guid(2fa2cf7de51b0d34d9dce3747b72e49d) path("Packages/com.unity.timeline/Editor/Utilities/SpacePartitioner.cs") state(2)
@@ -1714,8 +1710,8 @@ Script is not up to date after domain reload: guid(2bd83f31da5b4435ac97cde1432e7
 Script is not up to date after domain reload: guid(93eb6389f4fb6924987867ce0bc339ee) path("Packages/com.unity.test-framework/UnityEditor.TestRunner/TestRun/Tasks/CleanupVerificationTask.cs") state(2)
 Script is not up to date after domain reload: guid(5b6cac4a98010394791c66942a33caf4) path("Packages/com.unity.timeline/Editor/Audio/AudioClipPropertiesDrawer.cs") state(2)
 Script is not up to date after domain reload: guid(4f10dd60657c6004587f237a7e90f8e4) path("Packages/com.unity.timeline/Runtime/Audio/AudioPlayableAsset.cs") state(2)
-Script is not up to date after domain reload: guid(10ee98884a6e2ce49b1c338b54da3518) path("Assets/SimpleWings/Scripts/Helicopter2.cs") state(2)
 Script is not up to date after domain reload: guid(dd85a35169d313840a0874aea1a28629) path("Packages/com.unity.test-framework/UnityEngine.TestRunner/NUnitExtensions/Commands/EnumerableSetUpTearDownCommand.cs") state(2)
+Script is not up to date after domain reload: guid(ef97f39912c138b4cabdccedfb24093b) path("Packages/com.unity.timeline/Editor/treeview/Drawers/Layers/ItemsLayer.cs") state(2)
 Script is not up to date after domain reload: guid(d36c7f4b1ab29415394bf531fb4b54c8) path("Packages/com.unity.recorder/Editor/Sources/CameraCapture.cs") state(2)
 Script is not up to date after domain reload: guid(c3c112f1ddeedfe45839158cc4b148d4) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Utils/ColorUtilities.cs") state(2)
 Script is not up to date after domain reload: guid(c4777500b5da6094e956c3d4f04de4db) path("Packages/com.unity.textmeshpro/Scripts/Editor/TMP_GlyphPropertyDrawer.cs") state(2)
@@ -1732,7 +1728,6 @@ Script is not up to date after domain reload: guid(423fe2ef878fa1140a7e1f7f9e365
 Script is not up to date after domain reload: guid(67ee43b2f6148de40861b289b0e00591) path("Packages/com.unity.timeline/Editor/Window/Modes/TimelineActiveMode.cs") state(2)
 Script is not up to date after domain reload: guid(f16e09785c984c445a0467e30f845636) path("Packages/com.unity.timeline/Editor/Manipulators/Cursors/TimelineCursors.cs") state(2)
 Script is not up to date after domain reload: guid(f8964ef46e1d446dc9eb17a36a3e1f14) path("Packages/com.unity.timeline/Editor/treeview/TrackPropertyCurvesDataSource.cs") state(2)
-Script is not up to date after domain reload: guid(ef97f39912c138b4cabdccedfb24093b) path("Packages/com.unity.timeline/Editor/treeview/Drawers/Layers/ItemsLayer.cs") state(2)
 Script is not up to date after domain reload: guid(cc6401f13df54ba44bfd7cdc93c7d64d) path("Packages/com.unity.test-framework/UnityEngine.TestRunner/NUnitExtensions/Attributes/UnitySetUpAttribute.cs") state(2)
 Script is not up to date after domain reload: guid(8349e42a2b30c7a4abd8678c203428ba) path("Packages/com.unity.test-framework/UnityEngine.TestRunner/NUnitExtensions/Commands/ImmediateEnumerableCommand.cs") state(2)
 Script is not up to date after domain reload: guid(5b3e90046c38f1d4dad2e0d5a79e871c) path("Packages/com.unity.test-framework/UnityEngine.TestRunner/NUnitExtensions/Runner/UnityWorkItemDataHolder.cs") state(2)
@@ -1947,7 +1942,7 @@ Script is not up to date after domain reload: guid(f58ce17b38de9c7488c65caeeefd0
 Script is not up to date after domain reload: guid(93665e8b67658804d99c4487228cc050) path("Packages/com.unity.timeline/Runtime/TimelineAsset_CreateRemove.cs") state(2)
 Script is not up to date after domain reload: guid(31a19414c41e5ae4aae2af33fee712f6) path("Packages/com.unity.ugui/Runtime/UI/Core/Mask.cs") state(2)
 Script is not up to date after domain reload: guid(e435bf89a8bb0bf4abee94a2cc516927) path("Packages/com.unity.recorder/Editor/Sources/Recorders/GIFRecorder/GIFRecorderSettings.cs") state(2)
-Script is not up to date after domain reload: guid(2587848887032bd459b287b10ae5912e) path("Assets/SimpleWings/Scripts/TailRotor.cs") state(2)
+Script is not up to date after domain reload: guid(2587848887032bd459b287b10ae5912e) path("Assets/SimpleWings/Demo/Scripts/TailRotor.cs") state(2)
 Script is not up to date after domain reload: guid(8a4b6301a5afaec4cb87d21383ceb0b3) path("Packages/com.unity.ugui/Tests/Runtime/Layout/VerticalLayoutGroupTests.cs") state(2)
 Script is not up to date after domain reload: guid(76c82729ad712f14bae1a8a279c52ac3) path("Packages/com.unity.ugui/Tests/Runtime/EventSystem/InputModuleTests/DragCallbackCheck.cs") state(2)
 Script is not up to date after domain reload: guid(1344c3c82d62a2a41a3576d8abb8e3ea) path("Packages/com.unity.ugui/Runtime/UI/Core/RawImage.cs") state(2)
@@ -2301,7 +2296,6 @@ Script is not up to date after domain reload: guid(cad095eccea17b741bc4cd264e744
 Script is not up to date after domain reload: guid(3051d2fb25301fa4a81e797109712feb) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Effects/AutoExposureEditor.cs") state(2)
 Script is not up to date after domain reload: guid(6d5f9c23c4be9e644ae25c47f8b2299d) path("Packages/com.unity.collab-proxy/Editor/Views/Adapters/ListAdapters/BaseListAdapter.cs") state(2)
 Script is not up to date after domain reload: guid(8d20eedbe40f0ce41a4c4f633f225de8) path("Packages/com.unity.test-framework/UnityEditor.TestRunner/CommandLineTest/LogSavingCallbacks.cs") state(2)
-Script is not up to date after domain reload: guid(4e91bb4794de1b244bc8159f60f97165) path("Assets/SimpleWings/Scripts/RotorBlade.cs") state(2)
 Script is not up to date after domain reload: guid(3c4ccfb0896bcf44da13e152b267aa49) path("Packages/com.unity.test-framework/UnityEditor.TestRunner/TestLaunchers/PrebuildSetupAttributeFinder.cs") state(2)
 Script is not up to date after domain reload: guid(6d2f47eae5f447748892c46848956d5f) path("Packages/com.unity.test-framework/UnityEditor.TestRunner/NUnitExtension/Attributes/ITestPlayerBuildModifier.cs") state(2)
 Script is not up to date after domain reload: guid(b5b9496d9b39e674abf5b3bd1ad57a67) path("Packages/com.unity.recorder/Editor/Sources/Recorders/_Legacy/MP4/MP4Recorder.cs") state(2)
@@ -2408,7 +2402,6 @@ Script is not up to date after domain reload: guid(02e1fe0a338b35545a5fed1345848
 Script is not up to date after domain reload: guid(4545bb65ccebf8040ac212d5792979b5) path("Packages/com.unity.timeline/Editor/Utilities/Graphics.cs") state(2)
 Script is not up to date after domain reload: guid(c9b23632c77de204abfe8bf7168d48c0) path("Packages/com.unity.test-framework/UnityEditor.TestRunner/TestRunner/Utils/EditorCompilationInterfaceProxy.cs") state(2)
 Script is not up to date after domain reload: guid(56c8c6e437b14f8e9a91e9832c11bc1a) path("Packages/com.unity.ide.rider/Rider/Editor/ProjectGeneration/AssemblyNameProvider.cs") state(2)
-Script is not up to date after domain reload: guid(6b0e30c2fc413ca4ea80f7ea5830c321) path("Assets/SimpleWings/Scripts/PID.cs") state(2)
 Script is not up to date after domain reload: guid(275143c81d816ef4286fdc67aabc20c8) path("Packages/com.unity.ide.visualstudio/Editor/Messaging/MessageEventArgs.cs") state(2)
 Script is not up to date after domain reload: guid(4884ccc3528cb2e40a0e6f0a19a2b35b) path("Packages/com.unity.test-framework/UnityEditor.TestRunner/Api/CallbacksHolder.cs") state(2)
 Script is not up to date after domain reload: guid(fedb0f9e5006b1943abae52f52f08a1a) path("Packages/com.unity.test-framework/UnityEngine.TestRunner/NUnitExtensions/Attributes/UnityTestAttribute.cs") state(2)
@@ -2452,12 +2445,11 @@ Script is not up to date after domain reload: guid(d580900d83be2664c9c035d6e5079
 Script is not up to date after domain reload: guid(cb319974ad8ebd44aa1e1fbb02640b5b) path("Packages/com.unity.ugui/Editor/UI/HorizontalOrVerticalLayoutGroupEditor.cs") state(2)
 Script is not up to date after domain reload: guid(d7b5b883d3aae8d479647d5ae6182974) path("Packages/com.unity.timeline/Editor/DirectorStyles.cs") state(2)
 Script is not up to date after domain reload: guid(88338eb35defad644a48718188e8f219) path("Packages/com.unity.timeline/Editor/Manipulators/AddDelete/AddDeleteItemModeRipple.cs") state(2)
-Script is not up to date after domain reload: guid(a7c994af8695d8541b231d510f340b33) path("Assets/SimpleWings/Scripts/test.cs") state(2)
+Script is not up to date after domain reload: guid(8826b9218e4e2334086aea977a528177) path("Assets/SimpleWings/Demo/Scripts/Weapon.cs") state(2)
 Script is not up to date after domain reload: guid(22899211c24eeb248b22704499dd108f) path("Packages/com.unity.timeline/Editor/Trackhead.cs") state(2)
 Script is not up to date after domain reload: guid(061b0c1d04c01f54fa322b11b8662964) path("Packages/com.unity.recorder/Editor/Sources/RecordingSession.cs") state(2)
 Script is not up to date after domain reload: guid(f3b0ecb61e2f1e54ebd4572178bfd8b1) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Effects/SubpixelMorphologicalAntialiasing.cs") state(2)
 Script is not up to date after domain reload: guid(7a34fa72bd4185749832024e9c8010bf) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Effects/ScreenSpaceReflections.cs") state(2)
-Script is not up to date after domain reload: guid(8826b9218e4e2334086aea977a528177) path("Assets/SimpleWings/Demo/Scripts/Weapon.cs") state(2)
 Script is not up to date after domain reload: guid(227613ec5b3943443a284e30a6d6b91e) path("Packages/com.unity.timeline/Editor/inspectors/TimelinePreferences.cs") state(2)
 Script is not up to date after domain reload: guid(38f16807aeb0a5349920644eef3e04f1) path("Packages/com.unity.collab-proxy/Tests/Editor/ScenarioTestBase.cs") state(2)
 Script is not up to date after domain reload: guid(2fa2cf7de51b0d34d9dce3747b72e49d) path("Packages/com.unity.timeline/Editor/Utilities/SpacePartitioner.cs") state(2)
@@ -2730,164 +2722,21 @@ Script is not up to date after domain reload: guid(bea62e1faac8f9a48a4cb919ea05c
 Script is not up to date after domain reload: guid(9f48b2bb8da58264985e72257811c8fd) path("Packages/com.unity.collab-proxy/Editor/Views/IMainView.cs") state(2)
 Script is not up to date after domain reload: guid(02893ffb522b490a9fa28eedd2584309) path("Packages/com.unity.textmeshpro/Scripts/Editor/TMPro_TextContainerEditor.cs") state(2)
 Script is not up to date after domain reload: guid(a4b23776a3150a74ea5ad6271a3d8f15) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Utils/LogHistogram.cs") state(2)
-Shader compiler: UnityShaderCompiler.exe compiler executable disappeared on thread 18980, restarting
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Shader compiler: UnityShaderCompiler.exe compiler executable disappeared on thread 1384, restarting
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
 Refreshing native plugins compatible for Editor in 0.28 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 48 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 34.3 MB.
-System memory in use after: 34.3 MB.
+System memory in use before: 34.5 MB.
+System memory in use after: 34.5 MB.
 
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 503.
-Total: 1.814000 ms (FindLiveObjects: 0.168300 ms CreateObjectMapping: 0.005800 ms MarkObjects: 1.603200 ms  DeleteObjects: 0.035100 ms)
+Total: 2.032000 ms (FindLiveObjects: 0.179400 ms CreateObjectMapping: 0.005500 ms MarkObjects: 1.806500 ms  DeleteObjects: 0.039500 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/SimpleWings/Demo/Scripts/RotorAssembly.cs
-  artifactKey: Guid(648b175fa15be3c448af9da1ffe42555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleWings/Demo/Scripts/RotorAssembly.cs using Guid(648b175fa15be3c448af9da1ffe42555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b0b484403ace63beb147a930de75166') in 0.032323 seconds
-  Import took 0.035325 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.503813 seconds.
-  path: Assets/SimpleWings/Scripts/test.cs
-  artifactKey: Guid(a7c994af8695d8541b231d510f340b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleWings/Scripts/test.cs using Guid(a7c994af8695d8541b231d510f340b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09fa93b1c2e8a73bfa304135819b25bb') in 0.008456 seconds
-  Import took 0.011416 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003524 seconds.
-  path: Assets/SimpleWings/Scripts/test.cs
-  artifactKey: Guid(a7c994af8695d8541b231d510f340b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleWings/Scripts/test.cs using Guid(a7c994af8695d8541b231d510f340b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09fa93b1c2e8a73bfa304135819b25bb') in 0.002838 seconds
-  Import took 0.003918 seconds .
-
-========================================================================
-Received Prepare
-Reloading mono domain
-Begin MonoManager ReloadAssembly
-Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.0a21/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.0a21/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.002188 seconds.
-Symbol file LoadedFromMemory doesn't match image E:\Projects\SimpleRotors\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 28.90 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.754 seconds
-Registering precompiled user dll's ...
-Registered in 0.070615 seconds.
-Platform modules already initialized, skipping
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image E:\Projects\SimpleRotors\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.28 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.714 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.28 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1337 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 69.3 MB.
-System memory in use after: 69.4 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1834.
-Total: 2.702400 ms (FindLiveObjects: 0.499800 ms CreateObjectMapping: 0.092800 ms MarkObjects: 2.085700 ms  DeleteObjects: 0.022000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 87.704879 seconds.
-  path: Assets/SimpleWings/Scripts/TailRotor.cs
-  artifactKey: Guid(2587848887032bd459b287b10ae5912e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleWings/Scripts/TailRotor.cs using Guid(2587848887032bd459b287b10ae5912e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0379b9d404a94dcf349c4b2d6fdc370') in 0.007308 seconds
-  Import took 0.009726 seconds .
-
-========================================================================
-Received Prepare
-Reloading mono domain
-Begin MonoManager ReloadAssembly
-Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.0a21/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.0a21/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.002367 seconds.
-Symbol file LoadedFromMemory doesn't match image E:\Projects\SimpleRotors\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 29.08 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.811 seconds
-Registering precompiled user dll's ...
-Registered in 0.071716 seconds.
-Platform modules already initialized, skipping
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image E:\Projects\SimpleRotors\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.28 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.772 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.28 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 12 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 43.0 MB.
-System memory in use after: 43.1 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1838.
-Total: 1.730400 ms (FindLiveObjects: 0.286600 ms CreateObjectMapping: 0.049700 ms MarkObjects: 1.379300 ms  DeleteObjects: 0.013900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 113.885439 seconds.
-  path: Assets/SimpleWings/Scripts/Editor/WingCurvesEditor.cs
-  artifactKey: Guid(1eecfd512008b134b84aa66155929cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleWings/Scripts/Editor/WingCurvesEditor.cs using Guid(1eecfd512008b134b84aa66155929cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e74249dd418c1a47b351029630fed4d4') in 0.006403 seconds
-  Import took 0.010387 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.188423 seconds.
-  path: Assets/SimpleWings/Scripts/Wing/SimpleWing.cs
-  artifactKey: Guid(e0682376e198e254baa203ad9293f11b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleWings/Scripts/Wing/SimpleWing.cs using Guid(e0682376e198e254baa203ad9293f11b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55467ad311b4d26699f034d249a9530d') in 0.005556 seconds
-  Import took 0.008505 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.021970 seconds.
-  path: Assets/SimpleWings/Scripts/Editor/SimpleWingEditor.cs
-  artifactKey: Guid(cd62a0fa82ca740499214d0e9e8dea8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SimpleWings/Scripts/Editor/SimpleWingEditor.cs using Guid(cd62a0fa82ca740499214d0e9e8dea8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcb8201a0ef216c1178d0d59fad6f293') in 0.005592 seconds
-  Import took 0.008770 seconds .
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 2.72 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 43.2 MB.
-System memory in use after: 43.3 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1838.
-Total: 2.342100 ms (FindLiveObjects: 0.355000 ms CreateObjectMapping: 0.080300 ms MarkObjects: 1.888400 ms  DeleteObjects: 0.016300 ms)
+  path: Assets/SimpleWings/Demo/Scenes/Heli.unity
+  artifactKey: Guid(573b36618c37da04784cc484d949b8c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleWings/Demo/Scenes/Heli.unity using Guid(573b36618c37da04784cc484d949b8c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '010a0e94ef63b9b767f48572da07b730') in 0.018160 seconds
+  Import took 0.019027 seconds .
 
