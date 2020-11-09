@@ -4,7 +4,6 @@ using UnityEngine;
 public class RotorAssembly : MonoBehaviour
 {
     public Helicopter Heli;
-    public float MaxAngularVelocity = 400f;
     public float BladeLength = 5;
     public float MaxBladePitch = 10f;
     public float MinBladePitch = -5f;
@@ -21,14 +20,14 @@ public class RotorAssembly : MonoBehaviour
     private void Start()
     {
         _rb = this.GetComponent<Rigidbody>();
-        _rb.maxAngularVelocity = MaxAngularVelocity;
+        _rb.maxAngularVelocity = Mathf.Infinity;
 
-        _rotors = GetComponents<FixedJoint>();
+        _rotors = GetComponent<HingeJoint>().connectedBody.GetComponents<FixedJoint>();
         _initialRotations = new Quaternion[_rotors.Length];
 
         for(int i=0; i<_rotors.Length; i++)
         {
-            _rotors[i].connectedBody.maxAngularVelocity = MaxAngularVelocity;
+            _rotors[i].connectedBody.maxAngularVelocity = Mathf.Infinity;
             _initialRotations[i] = _rotors[i].connectedBody.transform.localRotation;
         }
     }
